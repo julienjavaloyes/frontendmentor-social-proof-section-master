@@ -1,0 +1,15 @@
+@use "../0-abstracts/colors" as c;
+
+
+.hero {
+    margin: 2rem 0rem;
+    text-align: center;
+    .hero-title{
+        color: c.$VeryDarkMagenta;
+        padding: 1.5rem 3rem;
+    }
+    .hero-desc {
+        color: c.$DarkGrayishMagenta;
+        padding: 0rem 0.5rem;
+    }
+}

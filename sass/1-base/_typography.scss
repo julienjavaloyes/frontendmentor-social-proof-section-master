@@ -1,0 +1,31 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+
+$fontDisplay: 'League Spartan', sans-serif;
+
+body {
+    font-family: $fontDisplay ;
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.hero-desc {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.3rem;
+}
+
+.notedesc{
+    font-weight: 700;
+}
+
+.typebuyer {
+    font-weight: lighter;
+}
+.reviewdesc{
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+

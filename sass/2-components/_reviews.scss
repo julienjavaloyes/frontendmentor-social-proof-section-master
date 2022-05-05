@@ -1,0 +1,38 @@
+@use "../0-abstracts/colors" as c;
+
+.review {
+    background-color: c.$VeryDarkMagenta;
+    margin: 0.5rem 1rem;
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+
+    .reviewauthor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem 0px;
+        img {
+            height: 4ch;
+            border-radius: 50%;
+        }
+
+        .id {
+            padding: 0rem 1.5rem;;
+            .name{
+                color: c.$White;
+                padding: 0.2rem 0rem;;
+            }
+            .typebuyer {
+                color:c.$SoftPink;
+                padding: 0.2rem 0rem;;
+            }
+        }
+    
+
+    }
+
+    .reviewdesc{
+        color: c.$LightGrayishMagenta;
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,206 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.hero-desc {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.3rem;
+}
+
+.notedesc {
+  font-weight: 700;
+}
+
+.typebuyer {
+  font-weight: lighter;
+}
+
+.reviewdesc {
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+
+.review {
+  background-color: hsl(300deg, 43%, 22%);
+  margin: 0.5rem 1rem;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+}
+.review .reviewauthor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0px;
+}
+.review .reviewauthor img {
+  height: 4ch;
+  border-radius: 50%;
+}
+.review .reviewauthor .id {
+  padding: 0rem 1.5rem;
+}
+.review .reviewauthor .id .name {
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.2rem 0rem;
+}
+.review .reviewauthor .id .typebuyer {
+  color: hsl(333deg, 80%, 67%);
+  padding: 0.2rem 0rem;
+}
+.review .reviewdesc {
+  color: hsl(300deg, 24%, 96%);
+  margin-top: 1.5rem;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+}
+.notes .note {
+  background-color: hsl(300deg, 24%, 96%);
+  text-align: center;
+  margin: 0.5rem 0rem;
+  padding: 1rem 0rem;
+  border-radius: 0.5rem;
+}
+.notes .note .notedesc {
+  color: hsl(300deg, 43%, 22%);
+  padding: 0.5rem 0rem;
+}
+
+.hero {
+  margin: 2rem 0rem;
+  text-align: center;
+}
+.hero .hero-title {
+  color: hsl(300deg, 43%, 22%);
+  padding: 1.5rem 3rem;
+}
+.hero .hero-desc {
+  color: hsl(303deg, 10%, 53%);
+  padding: 0rem 0.5rem;
+}
+
+body {
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  background-size: 100% auto, 100% auto;
+}
+
+main {
+  width: 360px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+}
+main .reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size: auto;
+    margin: 0px 15vw;
+  }
+
+  main {
+    width: 100%;
+  }
+  main .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  main .hero .hero-titledescs {
+    width: 30vw;
+    padding: 1rem 1rem;
+  }
+  main .hero .hero-titledescs .hero-title {
+    padding: 1rem 1rem;
+    font-size: 3.5rem;
+  }
+  main .hero .notes {
+    width: 40vw;
+    margin-top: 2rem;
+  }
+  main .hero .notes .note {
+    width: 90%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  main .hero .notes .notedesc {
+    padding-left: 1rem;
+  }
+  main .hero .notes .note1 {
+    margin-left: 0rem;
+    margin-right: 3rem;
+  }
+  main .hero .notes .note2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  main .hero .notes .note3 {
+    margin-left: 3rem;
+    margin-right: 0rem;
+  }
+  main .reviews {
+    flex-direction: row;
+  }
+  main .reviews .review1 {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+  main .reviews .review2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  main .reviews .review3 {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (min-width: 900px) and (max-height: 550px) {
+  main {
+    top: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

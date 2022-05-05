@@ -1,0 +1,19 @@
+@use "../0-abstracts/colors" as c;
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 1rem;
+
+    .note {
+        background-color: c.$LightGrayishMagenta;
+        text-align: center;
+        margin: 0.5rem 0rem;
+        padding: 1rem 0rem;
+        border-radius: 0.5rem;
+        .notedesc{
+            color: c.$VeryDarkMagenta;
+            padding: 0.5rem 0rem;
+        }
+    }
+}
